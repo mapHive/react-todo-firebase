@@ -6,6 +6,8 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase.js";
 import { useNavigate } from "react-router-dom";
+import "./welcome.css";
+// import TodoImage from '../assets/todo-jpg.jpg'
 
 
 export default function Welcome() {
@@ -68,8 +70,8 @@ export default function Welcome() {
 
     return (
         <div className="welcome">
-
-            <h1>Todo-List</h1>
+            {/* <img src={TodoImage} alt="todo" className="todo-jpg" /> */}
+            <h1>Todo App</h1>
             <div className="login-register-container">
                 {isRegistering ? (
                     <>
@@ -130,13 +132,13 @@ export default function Welcome() {
                             placeholder="Password"
                         />
                         <button className="sign-in-register-button" onClick={handleSignIn}>
-                            Sign In
+                            Log In
                         </button>
                         <button
                             className="create-account-button"
                             onClick={() => setIsRegistering(true)}
                         >
-                            Create an account
+                            Sign Up
                         </button>
                     </>
                 )}

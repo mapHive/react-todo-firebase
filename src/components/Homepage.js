@@ -85,7 +85,7 @@ export default function Homepage() {
             <input
                 className="add-edit-input"
                 type="text"
-                placeholder="Add todo..."
+                placeholder="Add a todo"
                 value={todo}
                 onChange={(e) => setTodo(e.target.value)}
             />
